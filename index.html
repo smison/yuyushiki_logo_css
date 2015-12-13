@@ -645,6 +645,15 @@ body {
 	left: 415px;
 	background-color: #1928dc;
 }
+.uzu_rewrite_1 {
+	position: absolute;
+	width: 68px;
+	height: 79px;
+	border-radius: 50%;
+	top: 83px;
+	left: 410px;
+	background-color: #9bcdff;
+}
 .uzu4 {
 	position: absolute;
 	width: 68px;
@@ -654,6 +663,42 @@ body {
 	left: 410px;
 	background-color: #9bcdff;
 }
+.uzu_rewrite_2 {
+	position: absolute;
+	width: 52px;
+	height: 40px;
+	border-radius: 50%;
+	top: 103px;
+	left: 427px;
+	background-color: #1928dc;
+
+}
+/* TODO: このbeforeとafterは別タグに切り出して前面に出したほうが綺麗になるはず */
+/* afterの玉は左に寄せたほうが良い。バリができるから補正の青をかぶせて消す？ */
+.uzu_rewrite_2:before {
+	position: absolute;
+	content: "";
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	top: 25px;
+	left: 23px;
+	background-color: #9bcdff;
+
+}
+.uzu_rewrite_2:after {
+	position: absolute;
+	content: "";
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	top: 23px;
+	left: 32px;
+	background-color: #9bcdff;
+
+}
+
+
 .uzu5 {
 	position: absolute;
 	width: 38px;
@@ -690,8 +735,10 @@ body {
 
 <div class="yu_left_shita_back"></div>
 <div class="yu_right_shita_back"></div>
-<div class="uzu_back"></div>
 
+<!--
+<div class="uzu_back"></div>
+-->
 
 
 <div class="big_half_circle"></div>
@@ -711,10 +758,14 @@ body {
 
 <div class="shiki_yoko"></div>
 <div class="shiki_tate"></div>
+
 <div class="uzu1"></div>
 <div class="uzu2"></div>
 <div class="uzu3"></div>
+<div class="uzu_rewrite_1"></div>
 <div class="uzu4"></div>
+
+<div class="uzu_rewrite_2"></div>
 <div class="uzu5"></div>
 
 <div class="maru_blue"></div>
