@@ -215,6 +215,65 @@ body {
 	left: 169px;
 	background-color: #dcd2a0;
 }
+.fukidashi_circle {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	top: 75px;
+	left: 174px;
+	background-color: #ffffff;
+}
+.fukidashi_circle:before {
+	position: absolute;
+	content: "";
+	width: 23px;
+	height: 11px;
+	border-radius: 2px;
+	top: 0.5px;
+	left: 0px;
+	background-color: #dcd2a0;
+}
+.fukidashi_circle:after {
+	position: absolute;
+	content: "";
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	top: 4px;
+	left: 3.5px;
+	background-color: #dcd2a0;
+}
+.fukidashi_rewrite {
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	border-radius: 4px;
+	top: 84px;
+	left: 174px;
+	background-color: #ffffff;
+}
+.fukidashi_rewrite:before {
+	position: absolute;
+	content: "";
+	width: 3px;
+	height: 3px;
+	border-radius: 4px;
+	top: 0px;
+	left: 20px;
+	background-color: #ffffff;
+}
+.fukidashi_rewrite:after {
+	position: absolute;
+	content: "";
+	width:0;
+	height:0;
+	border-top:12px solid #dcd2a0;
+	border-left:4px solid transparent;
+	border-right:4px solid transparent;
+	top: 18px;
+	left: 8px;
+}
 .fukidashi_back {
 	position: absolute;
 	width: 57px;
@@ -970,6 +1029,8 @@ body {
 
 <div class="fukidashi_back"></div>
 <div class="fukidashi"></div>
+<div class="fukidashi_circle"></div>
+<div class="fukidashi_rewrite"></div>
 
 <div class="y_back"></div>
 <div class="u_back"></div>
