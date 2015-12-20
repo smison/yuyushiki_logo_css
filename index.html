@@ -1,237 +1,1222 @@
+<!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSSでゆゆ式ロゴ描いてみた</title>
+		<style>
+			#yu_left {
+				position: absolute;
+				width: 17px;
+				height: 140px;
+				border-radius: 10px;
+				background-color: #ffc878;
+				top: 71px;
+				left: 108px;
+				transform: rotate(22deg);
+			}
+			#yu_left:before {
+				position: absolute;
+				content: "";
+				width: 17px;
+				height: 106px;
+				border-radius: 10px;
+				background-color: #ffc878;
+				top: 71px;
+				top: 15px;
+				left: -44px;
+				transform: rotate(-1deg);
+			}
+			#yu_right {
+				position: absolute;
+				width: 17px;
+				height: 140px;
+				border-radius: 10px;
+				background-color: #ff9ba5;
+				top: 101px;
+				left: 221px;
+			}
+			#yu_right:before {
+				position: absolute;
+				content: "";
+				width: 17px;
+				height: 106px;
+				border-radius: 10px;
+				background-color: #ff9ba5;
+				top: 14px;
+				left: -44px;
+			}
+			#shiki_yoko {
+				position: absolute;
+				width: 118px;
+				height: 17px;
+				border-radius: 10px;
+				background-color: #9bcdff;
+				top: 96px;
+				left: 273px;
+				transform: rotate(349deg);
+			}
+			#shiki_yoko:before {
+				position: absolute;
+				content: "";
+				width: 68px;
+				height: 17px;
+				border-radius: 10px;
+				background-color: #9bcdff;
+				top: 35px;
+				left: 3px;
+			}
+			#shiki_yoko:after {
+				position: absolute;
+				content: "";
+				width: 85px;
+				height: 17px;
+				border-radius: 10px;
+				background-color: #9bcdff;
+				top: 81px;
+				left: 2px;
+				transform: rotate(172deg);
+			}
+			#shiki_tate {
+				position: absolute;
+				width: 58px;
+				height: 17px;
+				border-radius: 10px;
+				background-color: #9bcdff;
+				top: 156px;
+				left: 291px;
+				transform: rotate(259deg);
+			}
+			#shiki_tate:before {
+				position: absolute;
+				content: "";
+				width: 17px;
+				height: 115px;
+				border-radius: 10px;
+				background-color: #9bcdff;
+				top: 4px;
+				left: 55px;
+				transform: rotate(72deg);
+			}
+			#maru_blue {
+				position: absolute;
+				width: 13px;
+				height: 13px;
+				border-radius: 25px;
+				top: 184px;
+				left: 155px;
+				background-color: #8ccfff;
+			}
+			#maru_blue:before {
+				position: absolute;
+				content: "";
+				width: 17px;
+				height: 17px;
+				border-radius: 25px;
+				top: -115px;
+				left: 200px;
+				background-color: #9bcdff;
+			}
+			#maru_yellow_red {
+				position: absolute;
+				width: 13px;
+				height: 13px;
+				border-radius: 25px;
+				top: 102px;
+				left: 252px;
+				background-color: #dfeba9;
+			}
+			#maru_yellow_red:before {
+				position: absolute;
+				content: "";
+				width: 13px;
+				height: 13px;
+				top: 96px;
+				left: 152px;
+				border-radius: 25px;
+				background-color: #ffb5a3;
+			}
+			#yu_right_circle{
+				position: absolute;
+				width: 105px;
+				height: 105px;
+				border-radius: 52px;
+				top: 115px;
+				left: 178px;
+				background-color: #ff9ba5;
+			}
+			#yu_right_circle:before {
+				position: absolute;
+				content: "";
+				width: 72px;
+				height: 72px;
+				border-radius: 52px;
+				top: 18px;
+				left: 15px;
+				background-color: #1928dc;
+			}
+			#yu_left_circle{
+				position: absolute;
+				width: 105px;
+				height: 105px;
+				border-radius: 52px;
+				top: 86px;
+				left: 65px;
+				background-color: #ffc878;
+			}
+			#yu_left_circle:before {
+				position: absolute;
+				content: "";
+				width: 72px;
+				height: 72px;
+				border-radius: 52px;
+				top: 18px;
+				left: 15px;
+				background-color: #1928dc;
+			}
+			#big_half_circle {
+				position: absolute;
+				width: 147px;
+				height: 147px;
+				border-radius: 72px;
+				top: 136px;
+				left: 250px;
+				background-color: #dcd2a0;
+			}
+			#big_half_circle:before {
+				position: absolute;
+				content: "";
+				width: 113px;
+				height: 113px;
+				border-radius: 56px;
+				top: 17px;
+				left: 17px;
+				background-color: #1928dc;
+			}
+			#big_half_circle:after {
+				position: absolute;
+				content: "";
+				width: 183px;
+				height: 113px;
+				top: -30px;
+				left: -30px;
+				background-color: #1928dc;
+				transform: rotate(162deg);
+			}
+			#fukidashi {
+				position: absolute;
+				width: 33px;
+				height: 33px;
+				border-radius: 16px;
+				top: 71px;
+				left: 169px;
+				background-color: #ffad9d;
+			}
+			#fukidashi_circle {
+				position: absolute;
+				width: 23px;
+				height: 23px;
+				border-radius: 50%;
+				top: 75px;
+				left: 174px;
+				background-color: #ffffff;
+			}
+			#fukidashi_circle:before {
+				position: absolute;
+				content: "";
+				width: 23px;
+				height: 11px;
+				border-radius: 2px;
+				top: 0.5px;
+				left: 0px;
+				background-color: #ffad9d;
+			}
+			#fukidashi_circle:after {
+				position: absolute;
+				content: "";
+				width: 16px;
+				height: 16px;
+				border-radius: 50%;
+				top: 4px;
+				left: 3.5px;
+				background-color: #ffad9d;
+			}
+			#fukidashi_rewrite {
+				position: absolute;
+				width: 3px;
+				height: 3px;
+				border-radius: 4px;
+				top: 84px;
+				left: 174px;
+				background-color: #ffffff;
+			}
+			#fukidashi_rewrite:before {
+				position: absolute;
+				content: "";
+				width: 3px;
+				height: 3px;
+				border-radius: 4px;
+				top: 0px;
+				left: 20px;
+				background-color: #ffffff;
+			}
+			#fukidashi_rewrite:after {
+				position: absolute;
+				content: "";
+				width:0;
+				height:0;
+				border-top:12px solid #ffad9d;
+				border-left:4px solid transparent;
+				border-right:4px solid transparent;
+				top: 18px;
+				left: 8px;
+			}
+			#fukidashi_rewrite_2 {
+				position: absolute;
+				width: 12px;
+				height: 8px;
+				top: 74px;
+				left: 180px;
+				background-color: #ffad9d;
+			}
+			#fukidashi_back {
+				position: absolute;
+				width: 57px;
+				height: 57px;
+				border-radius: 27px;
+				top: 56px;
+				left: 158px;
+				background-color: #1928dc;
+			}
+			#yu_left_back_1 {
+				position: absolute;
+				width: 47px;
+				height: 137px;
+				border-radius: 23px;
+				background-color: #1928dc;
+				top: 54px;
+				left: 53px;
+				transform: rotate(22deg);
+			}
+			#yu_left_back_2 {
+				position: absolute;
+				width: 48px;
+				height: 180px;
+				border-radius: 24px;
+				background-color: #1928dc;
+				top: 53px;
+				left: 86px;
+				transform: rotate(25deg);
+			}
+			#yu_right_back_2 {
+				position: absolute;
+				width: 48px;
+				height: 175px;
+				border-radius: 24px;
+				background-color: #1928dc;
+				top: 83px;
+				left: 205px;
+			}
+			#yu_right_back_2:before {
+				position: absolute;
+				content: "";
+				width: 48px;
+				height: 154px;
+				border-radius: 24px;
+				background-color: #1928dc;
+				top: 0px;
+				left: -44px;
+			}
+			#maru_yellow_red_back {
+				position: absolute;
+				width: 48px;
+				height: 48px;
+				border-radius: 24px;
+				top: 87px;
+				left: 235px;
+				background-color: #1928dc;
+			}
+			#maru_yellow_red_back:before {
+				position: absolute;
+				content: "";
+				width: 48px;
+				height: 48px;
+				border-radius: 24px;
+				top: 92px;
+				left: 150px;
+				background-color: #1928dc;
+			}
+			#yu_left_circle_back{
+				position: absolute;
+				width: 135px;
+				height: 135px;
+				border-radius: 67px;
+				top: 73px;
+				left: 53px;
+				background-color: #1928dc;
+			}
+			#shiki_yoko_back {
+				position: absolute;
+				width: 136px;
+				height: 37px;
+				border-radius: 18px;
+				background-color: #1928dc;
+				top: 78px;
+				left: 263px;
+				transform: rotate(347deg);
+			}
+			#shiki_yoko_back:after {
+				position: absolute;
+				content: "";
+				width: 45px;
+				height: 45px;
+				border-radius: 22px;
+				background-color: #1928dc;
+				top: 2px;
+				left: 98px;
+			}
+			#shiki_tate_back {
+				position: absolute;
+				width: 45px;
+				height: 45px;
+				border-radius: 27px;
+				top: 54px;
+				left: 316px;
+				background-color: #1928dc;
+			}
+			#shiki_tate_back:before {
+				position: absolute;
+				content: "";
+				width: 42px;
+				height: 42px;
+				border-radius: 21px;
+				top: 0px;
+				left: 26px;
+				background-color: #1928dc;
+			}
+			#big_half_circle_back {
+				position: absolute;
+				width: 182px;
+				height: 182px;
+				border-radius: 91px;
+				top: 120px;
+				left: 233px;
+				background-color: #1928dc;
+			}
+			#maru_blue_back {
+				position: absolute;
+				width: 33px;
+				height: 33px;
+				border-radius: 17px;
+				top: 180px;
+				left: 142px;
+				background-color: #1928dc;
+			}
+			#yu_right_shita {
+				position: absolute;
+				width: 28px;
+				height: 17px;
+				border-radius: 10px;
+				background-color: #ff9ba5;
+				top: 244px;
+				left: 194px;
+			}
+			#yu_right_shita:before {
+				position: absolute;
+				content: "";
+				width: 48px;
+				height: 48px;
+				border-radius: 24px;
+				background-color: #ff9ba5;
+				top: -32px;
+				left: -4px;
+			}
+			#yu_right_shita:after {
+				position: absolute;
+				content: "";
+				width: 40px;
+				height: 40px;
+				border-radius: 20px;
+				top: -39px;
+				left: -12px;
+				background-color: #1928dc;
+			}
+			#yu_right_shita_back {
+				position: absolute;
+				width: 48px;
+				height: 48px;
+				border-radius: 24px;
+				top: 229px;
+				left: 181px;
+				background-color: #1928dc;
+			}
+			#yu_right_shita_back_2 {
+				position: absolute;
+				width: 58px;
+				height: 90px;
+				border-radius: 50%;
+				top: 190px;
+				left: 193px;
+				background-color: #1928dc;
+				transform: rotate(24deg);
+			}
+			#yu_left_shita {
+				position: absolute;
+				width: 28px;
+				height: 17px;
+				border-radius: 10px;
+				background-color: #ffc878;
+				top: 204px;
+				left: 50px;
+				transform: rotate(22deg);
+			}
+			#yu_left_shita:before {
+				position: absolute;
+				content: "";
+				width: 48px;
+				height: 48px;
+				border-radius: 24px;
+				background-color: #ffc878;
+				top: -32px;
+				left: -4px;
+			}
+			#yu_left_shita:after {
+				position: absolute;
+				content: "";
+				width: 40px;
+				height: 40px;
+				border-radius: 20px;
+				top: -39px;
+				left: -12px;
+				background-color: #1928dc;
+			}
+			#yu_left_shita_back {
+				position: absolute;
+				width: 55px;
+				height: 48px;
+				border-radius: 24px;
+				top: 186px;
+				left: 39px;
+				background-color: #1928dc;
+				transform: rotate(22deg);
+			}
+			#yu_left_shita_back_2 {
+				position: absolute;
+				width: 58px;
+				height: 90px;
+				border-radius: 50%;
+				top: 153px;
+				left: 61px;
+				background-color: #1928dc;
+				transform: rotate(44deg);
+			}
+			#y_back {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				border-radius: 7px;
+				top: 62px;
+				left: 280px;
+				background-color: #1928dc;
+			}
+			#u_back {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				border-radius: 7px;
+				top: 50px;
+				left: 293px;
+				background-color: #1928dc;
+			}
+			#y_back_2 {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				border-radius: 7px;
+				top: 41px;
+				left: 308px;
+				background-color: #1928dc;
+			}
+			#u_back_2 {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				border-radius: 7px;
+				top: 35px;
+				left: 324px;
+				background-color: #1928dc;
+			}
+			#s_back {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				border-radius: 7px;
+				top: 32px;
+				left: 341px;
+				background-color: #1928dc;
+			}
+			#h_back {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				border-radius: 7px;
+				top: 33px;
+				left: 357px;
+				background-color: #1928dc;
+			}
+			#i_back {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				border-radius: 7px;
+				top: 35px;
+				left: 375px;
+				background-color: #1928dc;
+			}
+			#k_back {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				border-radius: 7px;
+				top: 42px;
+				left: 390px;
+				background-color: #1928dc;
+			}
+			#i_back_2 {
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				border-radius: 7px;
+				top: 52px;
+				left: 404px;
+				background-color: #1928dc;
+			}
+			#big_half_circle_maru {
+				position: absolute;
+				width: 17px;
+				height: 17px;
+				border-radius: 9px;
+				top: 190px;
+				left: 379px;
+				background-color: #dcd2a0;
+			}
+			#big_half_circle_maru:before {
+				position: absolute;
+				content: "";
+				width: 18px;
+				height: 17px;
+				border-radius: 9px;
+				top: 38px;
+				left: -124px;
+				background-color: #dcd2a0;
+			}
+			#uzu_back {
+				position: absolute;
+				width: 134px;
+				height: 134px;
+				border-radius: 67px;
+				top: 69px;
+				left: 383px;
+				background-color: #1928dc;
+			}
+			#yu_right_rewrite {
+				position: absolute;
+				width: 27px;
+				height: 64px;
+				top: 168px;
+				left: 194px;
+				background-color: #1928dc;
+			}
+			#yu_right_rewrite:before {
+				position: absolute;
+				content: "";
+				width: 19px;
+				height: 19px;
+				border-radius: 10px;
+				top: 36px;
+				left: 15px;
+				background-color: #ff9ba5;
+			}
+			#yu_left_rewrite {
+				position: absolute;
+				width: 27px;
+				height: 64px;
+				top: 128px;
+				left: 72px;
+				background-color: #1928dc;
+				transform: rotate(22deg);
+			}
+			#yu_left_rewrite:before {
+				position: absolute;
+				content: "";
+				width: 18px;
+				height: 18px;
+				border-radius: 9px;
+				top: 37px;
+				left: 16px;
+				background-color: #ffc878;
+			}
+			#yu_left_shita_rewrite {
+				position: absolute;
+				width: 17px;
+				height: 30px;
+				top: 190px;
+				left: 47px;
+				background-color: #1928dc;
+				transform: rotate(22deg);
+			}
+			#yu_left_shita_rewrite:before {
+				position: absolute;
+				content: "";
+				width: 17px;
+				height: 17px;
+				border-radius: 8px;
+				top: 10px;
+				left: 8px;
+				background-color: #ffc878;
+			}
+			#yu_right_shita_rewrite {
+				position: absolute;
+				width: 17px;
+				height: 30px;
+				top: 233px;
+				left: 189px;
+				background-color: #1928dc;
+			}
+			#yu_right_shita_rewrite:before {
+				position: absolute;
+				content: "";
+				width: 17px;
+				height: 17px;
+				border-radius: 8px;
+				top: 11px;
+				left: 8px;
+				background-color: #ff9ba5;
+			}
+			#uzu1 {
+				position: absolute;
+				width: 100px;
+				height: 43px;
+				border-radius: 50%;
+				background-color: #9bcdff;
+				top: 137px;
+				left: 354px;
+				transform: rotate(39deg);
+			}
+			#uzu2 {
+				position: absolute;
+				width: 100px;
+				height: 110px;
+				border-radius: 50%;
+				background-color: #9bcdff;
+				top: 83px;
+				left: 401px;
+			}
+			#uzu3 {
+				position: absolute;
+				width: 70px;
+				height: 75px;
+				border-radius: 50%;
+				top: 101px;
+				left: 415px;
+				background-color: #1928dc;
+			}
+			#uzu_rewrite_1 {
+				position: absolute;
+				width: 95px;
+				height: 69px;
+				border-radius: 50%;
+				top: 103px;
+				left: 380px;
+				background-color: #1928dc;
+				transform: rotate(39deg);
+			}
+			#uzu_rewrite_1:before {
+				position: absolute;
+				content: "";
+				width: 55px;
+				height: 29px;
+				top: 32px;
+				left: -10px;
+				background-color: #1928dc;
+				transform: rotate(18deg);
+			}
+			#uzu_rewrite_1:after {
+				position: absolute;
+				content: "";
+				width: 45px;
+				height: 10px;
+				top: 79px;
+				left: -10px;
+				background-color: #1928dc;
+				transform: rotate(21deg);
+			}
+			#uzu4 {
+				position: absolute;
+				width: 68px;
+				height: 79px;
+				border-radius: 50%;
+				top: 83px;
+				left: 410px;
+				background-color: #9bcdff;
+			}
+			#uzu_rewrite_2 {
+				position: absolute;
+				width: 52px;
+				height: 40px;
+				border-radius: 50%;
+				top: 103px;
+				left: 427px;
+				background-color: #1928dc;
+
+			}
+			#uzu_rewrite_2:before {
+				position: absolute;
+				content: "";
+				width: 18px;
+				height: 18px;
+				border-radius: 50%;
+				top: 25px;
+				left: 23px;
+				background-color: #9bcdff;
+
+			}
+			#uzu_rewrite_2:after {
+				position: absolute;
+				content: "";
+				width: 18px;
+				height: 18px;
+				border-radius: 50%;
+				top: 23px;
+				left: 32px;
+				background-color: #9bcdff;
+
+			}
+			#uzu_rewrite_3 {
+				position: absolute;
+				width: 40px;
+				height: 10px;
+				border-radius: 50%;
+				top: 184.5px;
+				left: 427px;
+				background-color: #9bcdff;
+				transform: rotate(-5deg);
+			}
+			#uzu_rewrite_3:before {
+				position: absolute;
+				content: "";
+				width: 20px;
+				height: 10px;
+				border-radius: 50%;
+				top: -84px;
+				left: 20px;
+				background-color: #1928dc;
+				transform: rotate(15deg);
+
+
+			}
+			#uzu5 {
+				position: absolute;
+				width: 38px;
+				height: 43px;
+				border-radius: 50%;
+				top: 101px;
+				left: 425px;
+				background-color: #1928dc;
+			}
+			#h {
+				position: absolute;
+				width: 3px;
+				height: 10px;
+				border-radius: 30px;
+				top: 34.5px;
+				left: 360.5px;
+				background-color: #FFFFFF;
+				transform: rotate(7deg);
+			}
+			#h:before {
+				position: absolute;
+				content: "";
+				width: 3px;
+				height: 10px;
+				border-radius: 30px;
+				top: 0px;
+				left: 5px;
+				background-color: #FFFFFF;
+			}
+			#h:after {
+				position: absolute;
+				content: "";
+				width: 2px;
+				height: 6px;
+				border-radius: 30px;
+				top: 1px;
+				left: 3px;
+				background-color: #FFFFFF;
+				transform: rotate(90deg);
+			}
+			#y {
+				position: absolute;
+				width: 3px;
+				height: 6px;
+				border-radius: 30px;
+				top: 68px;
+				left: 288px;
+				background-color: #FFFFFF;
+				transform: rotate(-55deg);
+			}
+			#y:before {
+				position: absolute;
+				content: "";
+				width: 3px;
+				height: 6px;
+				border-radius: 30px;
+				top: -5px;
+				left: -1px;
+				background-color: #FFFFFF;
+				transform: rotate(-21deg);
+			}
+			#y:after {
+				position: absolute;
+				content: "";
+				width: 3px;
+				height: 6px;
+				border-radius: 30px;
+				top: -5px;
+				left: 2px;
+				background-color: #FFFFFF;
+				transform: rotate(22deg);
+			}
+			#u {
+				position: absolute;
+				width: 3px;
+				height: 9px;
+				border-radius: 30px;
+				top: 54px;
+				left: 296px;
+				background-color: #FFFFFF;
+				transform: rotate(-42deg);
+			}
+			#u:before {
+				position: absolute;
+				content: "";
+				width: 3px;
+				height: 9px;
+				border-radius: 30px;
+				top: 0px;
+				left: 5px;
+				background-color: #FFFFFF;
+			}
+			#u:after {
+				position: absolute;
+				content: "";
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				top: 3px;
+				left: 0.5px;
+				background-color: #FFFFFF;
+			}
+			#u_rewrite {
+				position: absolute;
+				width: 3px;
+				height: 8px;
+				border-radius: 30px;
+				top: 52px;
+				left: 297px;
+				background-color: #1928dc;
+				transform: rotate(-42deg);
+			}
+			#u_2 {
+				position: absolute;
+				width: 3px;
+				height: 9px;
+				border-radius: 30px;
+				top: 38px;
+				left: 327px;
+				background-color: #FFFFFF;
+				transform: rotate(-22deg);
+			}
+			#u_2:before {
+				position: absolute;
+				content: "";
+				width: 3px;
+				height: 9px;
+				border-radius: 30px;
+				top: 0px;
+				left: 5px;
+				background-color: #FFFFFF;
+			}
+			#u_2:after {
+				position: absolute;
+				content: "";
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				top: 3px;
+				left: 0.5px;
+				background-color: #FFFFFF;
+			}
+			#u_2_rewrite {
+				position: absolute;
+				width: 3px;
+				height: 8px;
+				border-radius: 30px;
+				top: 37px;
+				left: 329px;
+				background-color: #1928dc;
+				transform: rotate(-22deg);
+			}
+			#y_2 {
+				position: absolute;
+				width: 3px;
+				height: 6px;
+				border-radius: 30px;
+				top: 48px;
+				left: 315px;
+				background-color: #FFFFFF;
+				transform: rotate(-35deg);
+			}
+			#y_2:before {
+				position: absolute;
+				content: "";
+				width: 2px;
+				height: 6px;
+				border-radius: 30px;
+				top: -5px;
+				left: -1px;
+				background-color: #FFFFFF;
+				transform: rotate(-21deg);
+			}
+			#y_2:after {
+				position: absolute;
+				content: "";
+				width: 3px;
+				height: 6px;
+				border-radius: 30px;
+				top: -5px;
+				left: 2px;
+				background-color: #FFFFFF;
+				transform: rotate(22deg);
+			}
+			#s {
+				position: absolute;
+				width: 8px;
+				height: 10px;
+				border-radius: 30px;
+				top: 34px;
+				left: 344px;
+				background-color: #FFFFFF;
+			}
+			#s:before {
+				position: absolute;
+				content: "";
+				width: 3px;
+				height: 7px;
+				border-radius: 8px;
+				top: 0.5px;
+				left: 4px;
+				background-color: #1928dc;
+				transform: rotate(-60deg);
+			}
+			#s:after {
+				position: absolute;
+				content: "";
+				width: 2px;
+				height: 7px;
+				border-radius: 8px;
+				top: 2px;
+				left: 1px;
+				background-color: #1928dc;
+				transform: rotate(-60deg);
+			}
+			#s_rewrite {
+				position: absolute;
+				width: 2px;
+				height: 3px;
+				border-radius: 100%;
+				top: 35px;
+				left: 350px;
+				background-color: #FFFFFF;
+			}
+			#s_rewrite:before {
+				position: absolute;
+				content: "";
+				width: 1px;
+				height: 2px;
+				border-radius: 100%;
+				top: 4px;
+				left: -6px;
+				background-color: #FFFFFF;
+			}
+			#s_rewrite:after {
+				position: absolute;
+				content: "";
+				width: 8px;
+				height: 2px;
+				top: 2px;
+				left: -6px;
+				background-color: #FFFFFF;
+				transform: rotate(30deg);
+			}
+			#i {
+				position: absolute;
+				width: 3px;
+				height: 11px;
+				border-radius: 30px;
+				top: 37px;
+				left: 381px;
+				background-color: #FFFFFF;
+				transform: rotate(19deg);
+			}
+			#i_2 {
+				position: absolute;
+				width: 3px;
+				height: 11px;
+				border-radius: 30px;
+				top: 54px;
+				left: 410px;
+				background-color: #FFFFFF;
+				transform: rotate(35deg);
+			}
+			#k {
+				position: absolute;
+				width: 2px;
+				height: 10px;
+				border-radius: 30px;
+				top: 44px;
+				left: 394px;
+				background-color: #FFFFFF;
+				transform: rotate(35deg);
+			}
+			#k:before {
+				position: absolute;
+				content: "";
+				width: 3px;
+				height: 5px;
+				border-radius: 30px;
+				top: 0px;
+				left: 2px;
+				background-color: #FFFFFF;
+				transform: rotate(46deg);
+			}
+			#k:after {
+				position: absolute;
+				content: "";
+				width: 3px;
+				height: 7px;
+				border-radius: 30px;
+				top: 3px;
+				left: 3px;
+				background-color: #FFFFFF;
+				transform: rotate(121deg);
+			}
+			#uzu_shita_back {
+				position: absolute;
+				width: 144px;
+				height: 141px;
+				border-radius: 50%;
+				top: 70px;
+				left: 373px;
+				background-color: #1928dc;
+			}
+			#text {
+				position: absolute;
+				font-size: 12px;
+				top: 345px;
+				margin-left: 30px;
+			}
+			p {
+				font-size: 14px;
+			}
+			a:link    { color: #000000; }
+			a:visited { color: #000000; }
+			a:hover   { color: #000000; }
+			a:active  { color: #000000; }
+		</style>
+	</head>
 	<body>
-<style>
-body {
-	background-image: url(logo.png);
-	background-image: url(logo_usu.png);
-	background-repeat: no-repeat;
-	background-position: 30px 30px;
-}
-
-.yu_left {
-	position: absolute;
-	width: 17px;
-	height: 140px;
-	border-radius: 10px;
-	background-color: #ffc878;
-	top: 71px;
-	left: 110px;
-	transform: rotate(22deg);
-}
-.yu_left:before {
-	position: absolute;
-	content: "";
-	width: 17px;
-	height: 106px;
-	border-radius: 10px;
-	background-color: #ffc878;
-	top: 71px;
-	top: 15px;
-	left: -44px;
-	transform: rotate(-1deg);
-}
-.yu_right {
-	position: absolute;
-	width: 17px;
-	height: 140px;
-	border-radius: 10px;
-	background-color: #ff9ba5;
-	top: 101px;
-	left: 221px;
-}
-.yu_right:before {
-	position: absolute;
-	content: "";
-	width: 17px;
-	height: 106px;
-	border-radius: 10px;
-	background-color: #ff9ba5;
-	top: 14px;
-	left: -44px;
-}
-.shiki_yoko {
-	position: absolute;
-	width: 118px;
-	height: 17px;
-	border-radius: 10px;
-	background-color: #9bcdff;
-	top: 96px;
-	left: 273px;
-	transform: rotate(349deg);
-}
-.shiki_yoko:before {
-	position: absolute;
-	content: "";
-	width: 68px;
-	height: 17px;
-	border-radius: 10px;
-	background-color: #9bcdff;
-	top: 35px;
-	left: 3px;
-}
-.shiki_yoko:after {
-	position: absolute;
-	content: "";
-	width: 85px;
-	height: 17px;
-	border-radius: 10px;
-	background-color: #9bcdff;
-	top: 81px;
-	left: 2px;
-	transform: rotate(172deg);
-}
-.shiki_tate {
-	position: absolute;
-	width: 58px;
-	height: 17px;
-	border-radius: 10px;
-	background-color: #9bcdff;
-	top: 156px;
-	left: 291px;
-	transform: rotate(259deg);
-}
-.shiki_tate:before {
-	position: absolute;
-	content: "";
-	width: 17px;
-	height: 115px;
-	border-radius: 10px;
-	background-color: #9bcdff;
-	top: 4px;
-	left: 55px;
-	transform: rotate(72deg);
-}
-.maru_blue{
-	position: absolute;
-	width: 13px;
-	height: 13px;
-	border-radius: 25px;
-	top: 184px;
-	left: 155px;
-	background-color: #999;
-}
-.maru_blue:before {
-	position: absolute;
-	content: "";
-	width: 17px;
-	height: 17px;
-	border-radius: 25px;
-	top: -115px;
-	left: 200px;
-	background-color: #999;
-}
-.maru_yellow_red{
-	position: absolute;
-	width: 13px;
-	height: 13px;
-	border-radius: 25px;
-	top: 102px;
-	left: 252px;
-	background-color: #999;
-}
-.maru_yellow_red:before {
-	position: absolute;
-	content: "";
-	width: 13px;
-	height: 13px;
-	top: 96px;
-	left: 152px;
-	border-radius: 25px;
-	background-color: #999;
-}
-.yu_right_circle{
-	position: absolute;
-	width: 105px;
-	height: 105px;
-	border-radius: 52px;
-	top: 115px;
-	left: 178px;
-	background-color: #ff9ba5;
-}
-.yu_right_circle:before {
-	position: absolute;
-	content: "";
-	width: 72px;
-	height: 72px;
-	border-radius: 52px;
-	top: 18px;
-	left: 15px;
-	background-color: #1928dc;
-}
-.yu_left_circle{
-	position: absolute;
-	width: 105px;
-	height: 105px;
-	border-radius: 52px;
-	top: 86px;
-	left: 65px;
-	background-color: #ffc878;
-}
-.yu_left_circle:before {
-	position: absolute;
-	content: "";
-	width: 72px;
-	height: 72px;
-	border-radius: 52px;
-	top: 18px;
-	left: 15px;
-	background-color: #1928dc;
-}
-.big_half_circle {
-	position: absolute;
-	width: 147px;
-	height: 147px;
-	border-radius: 72px;
-	top: 136px;
-	left: 250px;
-	background-color: #dcd2a0;
-}
-.big_half_circle:before {
-	position: absolute;
-	content: "";
-	width: 113px;
-	height: 113px;
-	border-radius: 56px;
-	top: 17px;
-	left: 17px;
-	background-color: #1928dc;
-}
-.big_half_circle:after{
-	position: absolute;
-	content: "";
-	width: 183px;
-	height: 113px;
-	top: -30px;
-	left: -30px;
-	background-color: #1928dc;
-	transform: rotate(162deg);
-}
-.fukidashi {
-	position: absolute;
-	width: 33px;
-	height: 33px;
-	border-radius: 16px;
-	top: 71px;
-	left: 169px;
-	background-color: #dcd2a0;
-}
-</style>
-
-
-<div class="big_half_circle"></div>
-<div class="yu_left_circle"></div>
-<div class="yu_left"></div>
-
-<div class="yu_right_circle"></div>
-<div class="yu_right"></div>
-
-<div class="shiki_yoko"></div>
-<div class="shiki_tate"></div>
-
-<div class="maru_blue"></div>
-<div class="maru_yellow_red"></div>
-
-<div class="fukidashi"></div>
-
+		<div id="logo">
+			<div id="yu_left_back_1"></div>
+			<div id="yu_left_back_2"></div>
+			<div id="yu_left_circle_back"></div>
+			<div id="yu_right_back_2"></div>
+			<div id="maru_yellow_red_back"></div>
+			<div id="maru_blue_back"></div>
+			<div id="shiki_yoko_back"></div>
+			<div id="shiki_tate_back"></div>
+			<div id="big_half_circle_back"></div>
+			<div id="yu_left_shita_back"></div>
+			<div id="yu_right_shita_back"></div>
+			<div id="yu_left_shita_back_2"></div>
+			<div id="yu_right_shita_back_2"></div>
+			<div id="uzu_back"></div>
+			<div id="uzu_shita_back"></div>
+			<div id="big_half_circle"></div>
+			<div id="big_half_circle_maru"></div>
+			<div id="yu_left_shita"></div>
+			<div id="yu_left_shita_rewrite"></div>
+			<div id="yu_left_circle"></div>
+			<div id="yu_left"></div>
+			<div id="yu_left_rewrite"></div>
+			<div id="yu_right_shita"></div>
+			<div id="yu_right_shita_rewrite"></div>
+			<div id="yu_right_circle"></div>
+			<div id="yu_right"></div>
+			<div id="yu_right_rewrite"></div>
+			<div id="shiki_yoko"></div>
+			<div id="shiki_tate"></div>
+			<div id="uzu1"></div>
+			<div id="uzu2"></div>
+			<div id="uzu3"></div>
+			<div id="uzu_rewrite_1"></div>
+			<div id="uzu4"></div>
+			<div id="uzu_rewrite_2"></div>
+			<div id="uzu5"></div>
+			<div id="uzu_rewrite_3"></div>
+			<div id="maru_blue"></div>
+			<div id="maru_yellow_red"></div>
+			<div id="fukidashi_back"></div>
+			<div id="fukidashi"></div>
+			<div id="fukidashi_circle"></div>
+			<div id="fukidashi_rewrite"></div>
+			<div id="fukidashi_rewrite_2"></div>
+			<div id="y_back"></div>
+			<div id="u_back"></div>
+			<div id="y_back_2"></div>
+			<div id="u_back_2"></div>
+			<div id="s_back"></div>
+			<div id="h_back"></div>
+			<div id="i_back"></div>
+			<div id="k_back"></div>
+			<div id="i_back_2"></div>
+			<div id="y"></div>
+			<div id="u"></div>
+			<div id="u_rewrite"></div>
+			<div id="y_2"></div>
+			<div id="u_2"></div>
+			<div id="u_2_rewrite"></div>
+			<div id="s"></div>
+			<div id="s_rewrite"></div>
+			<div id="h"></div>
+			<div id="i"></div>
+			<div id="k"></div>
+			<div id="i_2"></div>
+		</div>
+		<div id="text">
+			<p>CSSでゆゆ式ロゴ描いてみた | <a href="http://www.adventar.org/calendars/1045">ゆゆ式 Advent Calendar 2015</a></p>
+			<br />
+			- 確認環境<br />
+			Google Chrome 47.0.2526.106 for OS X<br />
+			Firefox 43.0.1 for OS X
+			<br />
+			<br />
+			<a href="https://github.com/smison/yuyushiki_logo_css">smison/yuyushiki_logo_css</a>
+			<br />
+			<a href="https://twitter.com/smison">@smison</a>
+			<br />
+			<br />
+			<a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</div>
 	</body>
 </html>
