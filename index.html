@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<title>CSSでゆゆ式ロゴ描いてみた</title>
 		<style>
-			.yu_left {
+			#yu_left {
 				position: absolute;
 				width: 17px;
 				height: 140px;
@@ -14,7 +14,7 @@
 				left: 108px;
 				transform: rotate(22deg);
 			}
-			.yu_left:before {
+			#yu_left:before {
 				position: absolute;
 				content: "";
 				width: 17px;
@@ -26,7 +26,7 @@
 				left: -44px;
 				transform: rotate(-1deg);
 			}
-			.yu_right {
+			#yu_right {
 				position: absolute;
 				width: 17px;
 				height: 140px;
@@ -35,7 +35,7 @@
 				top: 101px;
 				left: 221px;
 			}
-			.yu_right:before {
+			#yu_right:before {
 				position: absolute;
 				content: "";
 				width: 17px;
@@ -45,7 +45,7 @@
 				top: 14px;
 				left: -44px;
 			}
-			.shiki_yoko {
+			#shiki_yoko {
 				position: absolute;
 				width: 118px;
 				height: 17px;
@@ -55,7 +55,7 @@
 				left: 273px;
 				transform: rotate(349deg);
 			}
-			.shiki_yoko:before {
+			#shiki_yoko:before {
 				position: absolute;
 				content: "";
 				width: 68px;
@@ -65,7 +65,7 @@
 				top: 35px;
 				left: 3px;
 			}
-			.shiki_yoko:after {
+			#shiki_yoko:after {
 				position: absolute;
 				content: "";
 				width: 85px;
@@ -76,7 +76,7 @@
 				left: 2px;
 				transform: rotate(172deg);
 			}
-			.shiki_tate {
+			#shiki_tate {
 				position: absolute;
 				width: 58px;
 				height: 17px;
@@ -86,7 +86,7 @@
 				left: 291px;
 				transform: rotate(259deg);
 			}
-			.shiki_tate:before {
+			#shiki_tate:before {
 				position: absolute;
 				content: "";
 				width: 17px;
@@ -97,7 +97,7 @@
 				left: 55px;
 				transform: rotate(72deg);
 			}
-			.maru_blue {
+			#maru_blue {
 				position: absolute;
 				width: 13px;
 				height: 13px;
@@ -106,7 +106,7 @@
 				left: 155px;
 				background-color: #8ccfff;
 			}
-			.maru_blue:before {
+			#maru_blue:before {
 				position: absolute;
 				content: "";
 				width: 17px;
@@ -116,7 +116,7 @@
 				left: 200px;
 				background-color: #9bcdff;
 			}
-			.maru_yellow_red {
+			#maru_yellow_red {
 				position: absolute;
 				width: 13px;
 				height: 13px;
@@ -125,7 +125,7 @@
 				left: 252px;
 				background-color: #dfeba9;
 			}
-			.maru_yellow_red:before {
+			#maru_yellow_red:before {
 				position: absolute;
 				content: "";
 				width: 13px;
@@ -135,7 +135,7 @@
 				border-radius: 25px;
 				background-color: #ffb5a3;
 			}
-			.yu_right_circle{
+			#yu_right_circle{
 				position: absolute;
 				width: 105px;
 				height: 105px;
@@ -144,7 +144,7 @@
 				left: 178px;
 				background-color: #ff9ba5;
 			}
-			.yu_right_circle:before {
+			#yu_right_circle:before {
 				position: absolute;
 				content: "";
 				width: 72px;
@@ -154,7 +154,7 @@
 				left: 15px;
 				background-color: #1928dc;
 			}
-			.yu_left_circle{
+			#yu_left_circle{
 				position: absolute;
 				width: 105px;
 				height: 105px;
@@ -163,7 +163,7 @@
 				left: 65px;
 				background-color: #ffc878;
 			}
-			.yu_left_circle:before {
+			#yu_left_circle:before {
 				position: absolute;
 				content: "";
 				width: 72px;
@@ -173,7 +173,7 @@
 				left: 15px;
 				background-color: #1928dc;
 			}
-			.big_half_circle {
+			#big_half_circle {
 				position: absolute;
 				width: 147px;
 				height: 147px;
@@ -182,7 +182,7 @@
 				left: 250px;
 				background-color: #dcd2a0;
 			}
-			.big_half_circle:before {
+			#big_half_circle:before {
 				position: absolute;
 				content: "";
 				width: 113px;
@@ -192,7 +192,7 @@
 				left: 17px;
 				background-color: #1928dc;
 			}
-			.big_half_circle:after {
+			#big_half_circle:after {
 				position: absolute;
 				content: "";
 				width: 183px;
@@ -202,7 +202,7 @@
 				background-color: #1928dc;
 				transform: rotate(162deg);
 			}
-			.fukidashi {
+			#fukidashi {
 				position: absolute;
 				width: 33px;
 				height: 33px;
@@ -211,7 +211,7 @@
 				left: 169px;
 				background-color: #ffad9d;
 			}
-			.fukidashi_circle {
+			#fukidashi_circle {
 				position: absolute;
 				width: 23px;
 				height: 23px;
@@ -220,7 +220,7 @@
 				left: 174px;
 				background-color: #ffffff;
 			}
-			.fukidashi_circle:before {
+			#fukidashi_circle:before {
 				position: absolute;
 				content: "";
 				width: 23px;
@@ -230,7 +230,7 @@
 				left: 0px;
 				background-color: #ffad9d;
 			}
-			.fukidashi_circle:after {
+			#fukidashi_circle:after {
 				position: absolute;
 				content: "";
 				width: 16px;
@@ -240,7 +240,7 @@
 				left: 3.5px;
 				background-color: #ffad9d;
 			}
-			.fukidashi_rewrite {
+			#fukidashi_rewrite {
 				position: absolute;
 				width: 3px;
 				height: 3px;
@@ -249,7 +249,7 @@
 				left: 174px;
 				background-color: #ffffff;
 			}
-			.fukidashi_rewrite:before {
+			#fukidashi_rewrite:before {
 				position: absolute;
 				content: "";
 				width: 3px;
@@ -259,7 +259,7 @@
 				left: 20px;
 				background-color: #ffffff;
 			}
-			.fukidashi_rewrite:after {
+			#fukidashi_rewrite:after {
 				position: absolute;
 				content: "";
 				width:0;
@@ -270,7 +270,7 @@
 				top: 18px;
 				left: 8px;
 			}
-			.fukidashi_rewrite_2 {
+			#fukidashi_rewrite_2 {
 				position: absolute;
 				width: 12px;
 				height: 8px;
@@ -278,8 +278,7 @@
 				left: 180px;
 				background-color: #ffad9d;
 			}
-
-			.fukidashi_back {
+			#fukidashi_back {
 				position: absolute;
 				width: 57px;
 				height: 57px;
@@ -288,8 +287,7 @@
 				left: 158px;
 				background-color: #1928dc;
 			}
-
-			.yu_left_back_1 {
+			#yu_left_back_1 {
 				position: absolute;
 				width: 47px;
 				height: 137px;
@@ -299,7 +297,7 @@
 				left: 53px;
 				transform: rotate(22deg);
 			}
-			.yu_left_back_2 {
+			#yu_left_back_2 {
 				position: absolute;
 				width: 48px;
 				height: 180px;
@@ -309,7 +307,7 @@
 				left: 86px;
 				transform: rotate(25deg);
 			}
-			.yu_right_back_2 {
+			#yu_right_back_2 {
 				position: absolute;
 				width: 48px;
 				height: 175px;
@@ -318,7 +316,7 @@
 				top: 83px;
 				left: 205px;
 			}
-			.yu_right_back_2:before {
+			#yu_right_back_2:before {
 				position: absolute;
 				content: "";
 				width: 48px;
@@ -328,7 +326,7 @@
 				top: 0px;
 				left: -44px;
 			}
-			.maru_yellow_red_back {
+			#maru_yellow_red_back {
 				position: absolute;
 				width: 48px;
 				height: 48px;
@@ -337,7 +335,7 @@
 				left: 235px;
 				background-color: #1928dc;
 			}
-			.maru_yellow_red_back:before {
+			#maru_yellow_red_back:before {
 				position: absolute;
 				content: "";
 				width: 48px;
@@ -347,7 +345,7 @@
 				left: 150px;
 				background-color: #1928dc;
 			}
-			.yu_left_circle_back{
+			#yu_left_circle_back{
 				position: absolute;
 				width: 135px;
 				height: 135px;
@@ -356,8 +354,7 @@
 				left: 53px;
 				background-color: #1928dc;
 			}
-
-			.shiki_yoko_back {
+			#shiki_yoko_back {
 				position: absolute;
 				width: 136px;
 				height: 37px;
@@ -367,7 +364,7 @@
 				left: 263px;
 				transform: rotate(347deg);
 			}
-			.shiki_yoko_back:after {
+			#shiki_yoko_back:after {
 				position: absolute;
 				content: "";
 				width: 45px;
@@ -377,8 +374,7 @@
 				top: 2px;
 				left: 98px;
 			}
-
-			.shiki_tate_back {
+			#shiki_tate_back {
 				position: absolute;
 				width: 45px;
 				height: 45px;
@@ -387,7 +383,7 @@
 				left: 316px;
 				background-color: #1928dc;
 			}
-			.shiki_tate_back:before {
+			#shiki_tate_back:before {
 				position: absolute;
 				content: "";
 				width: 42px;
@@ -397,7 +393,7 @@
 				left: 26px;
 				background-color: #1928dc;
 			}
-			.big_half_circle_back {
+			#big_half_circle_back {
 				position: absolute;
 				width: 182px;
 				height: 182px;
@@ -406,7 +402,7 @@
 				left: 233px;
 				background-color: #1928dc;
 			}
-			.maru_blue_back {
+			#maru_blue_back {
 				position: absolute;
 				width: 33px;
 				height: 33px;
@@ -415,7 +411,7 @@
 				left: 142px;
 				background-color: #1928dc;
 			}
-			.yu_right_shita {
+			#yu_right_shita {
 				position: absolute;
 				width: 28px;
 				height: 17px;
@@ -424,7 +420,7 @@
 				top: 244px;
 				left: 194px;
 			}
-			.yu_right_shita:before {
+			#yu_right_shita:before {
 				position: absolute;
 				content: "";
 				width: 48px;
@@ -434,7 +430,7 @@
 				top: -32px;
 				left: -4px;
 			}
-			.yu_right_shita:after {
+			#yu_right_shita:after {
 				position: absolute;
 				content: "";
 				width: 40px;
@@ -444,7 +440,7 @@
 				left: -12px;
 				background-color: #1928dc;
 			}
-			.yu_right_shita_back {
+			#yu_right_shita_back {
 				position: absolute;
 				width: 48px;
 				height: 48px;
@@ -453,7 +449,7 @@
 				left: 181px;
 				background-color: #1928dc;
 			}
-			.yu_right_shita_back_2 {
+			#yu_right_shita_back_2 {
 				position: absolute;
 				width: 58px;
 				height: 90px;
@@ -463,7 +459,7 @@
 				background-color: #1928dc;
 				transform: rotate(24deg);
 			}
-			.yu_left_shita {
+			#yu_left_shita {
 				position: absolute;
 				width: 28px;
 				height: 17px;
@@ -473,7 +469,7 @@
 				left: 50px;
 				transform: rotate(22deg);
 			}
-			.yu_left_shita:before {
+			#yu_left_shita:before {
 				position: absolute;
 				content: "";
 				width: 48px;
@@ -483,7 +479,7 @@
 				top: -32px;
 				left: -4px;
 			}
-			.yu_left_shita:after {
+			#yu_left_shita:after {
 				position: absolute;
 				content: "";
 				width: 40px;
@@ -493,7 +489,7 @@
 				left: -12px;
 				background-color: #1928dc;
 			}
-			.yu_left_shita_back {
+			#yu_left_shita_back {
 				position: absolute;
 				width: 55px;
 				height: 48px;
@@ -503,7 +499,7 @@
 				background-color: #1928dc;
 				transform: rotate(22deg);
 			}
-			.yu_left_shita_back_2 {
+			#yu_left_shita_back_2 {
 				position: absolute;
 				width: 58px;
 				height: 90px;
@@ -513,7 +509,7 @@
 				background-color: #1928dc;
 				transform: rotate(44deg);
 			}
-			.y_back {
+			#y_back {
 				position: absolute;
 				width: 14px;
 				height: 14px;
@@ -522,7 +518,7 @@
 				left: 280px;
 				background-color: #1928dc;
 			}
-			.u_back {
+			#u_back {
 				position: absolute;
 				width: 14px;
 				height: 14px;
@@ -531,7 +527,7 @@
 				left: 293px;
 				background-color: #1928dc;
 			}
-			.y_back_2 {
+			#y_back_2 {
 				position: absolute;
 				width: 14px;
 				height: 14px;
@@ -540,7 +536,7 @@
 				left: 308px;
 				background-color: #1928dc;
 			}
-			.u_back_2 {
+			#u_back_2 {
 				position: absolute;
 				width: 14px;
 				height: 14px;
@@ -549,7 +545,7 @@
 				left: 324px;
 				background-color: #1928dc;
 			}
-			.s_back {
+			#s_back {
 				position: absolute;
 				width: 14px;
 				height: 14px;
@@ -558,7 +554,7 @@
 				left: 341px;
 				background-color: #1928dc;
 			}
-			.h_back {
+			#h_back {
 				position: absolute;
 				width: 14px;
 				height: 14px;
@@ -567,7 +563,7 @@
 				left: 357px;
 				background-color: #1928dc;
 			}
-			.i_back {
+			#i_back {
 				position: absolute;
 				width: 14px;
 				height: 14px;
@@ -576,7 +572,7 @@
 				left: 375px;
 				background-color: #1928dc;
 			}
-			.k_back {
+			#k_back {
 				position: absolute;
 				width: 14px;
 				height: 14px;
@@ -585,7 +581,7 @@
 				left: 390px;
 				background-color: #1928dc;
 			}
-			.i_back_2 {
+			#i_back_2 {
 				position: absolute;
 				width: 14px;
 				height: 14px;
@@ -594,7 +590,7 @@
 				left: 404px;
 				background-color: #1928dc;
 			}
-			.big_half_circle_maru {
+			#big_half_circle_maru {
 				position: absolute;
 				width: 17px;
 				height: 17px;
@@ -603,7 +599,7 @@
 				left: 379px;
 				background-color: #dcd2a0;
 			}
-			.big_half_circle_maru:before {
+			#big_half_circle_maru:before {
 				position: absolute;
 				content: "";
 				width: 18px;
@@ -613,8 +609,7 @@
 				left: -124px;
 				background-color: #dcd2a0;
 			}
-
-			.uzu_back {
+			#uzu_back {
 				position: absolute;
 				width: 134px;
 				height: 134px;
@@ -623,7 +618,7 @@
 				left: 383px;
 				background-color: #1928dc;
 			}
-			.yu_right_rewrite {
+			#yu_right_rewrite {
 				position: absolute;
 				width: 27px;
 				height: 64px;
@@ -631,7 +626,7 @@
 				left: 194px;
 				background-color: #1928dc;
 			}
-			.yu_right_rewrite:before {
+			#yu_right_rewrite:before {
 				position: absolute;
 				content: "";
 				width: 19px;
@@ -641,8 +636,7 @@
 				left: 15px;
 				background-color: #ff9ba5;
 			}
-
-			.yu_left_rewrite {
+			#yu_left_rewrite {
 				position: absolute;
 				width: 27px;
 				height: 64px;
@@ -651,7 +645,7 @@
 				background-color: #1928dc;
 				transform: rotate(22deg);
 			}
-			.yu_left_rewrite:before {
+			#yu_left_rewrite:before {
 				position: absolute;
 				content: "";
 				width: 18px;
@@ -661,7 +655,7 @@
 				left: 16px;
 				background-color: #ffc878;
 			}
-			.yu_left_shita_rewrite {
+			#yu_left_shita_rewrite {
 				position: absolute;
 				width: 17px;
 				height: 30px;
@@ -670,7 +664,7 @@
 				background-color: #1928dc;
 				transform: rotate(22deg);
 			}
-			.yu_left_shita_rewrite:before {
+			#yu_left_shita_rewrite:before {
 				position: absolute;
 				content: "";
 				width: 17px;
@@ -680,7 +674,7 @@
 				left: 8px;
 				background-color: #ffc878;
 			}
-			.yu_right_shita_rewrite {
+			#yu_right_shita_rewrite {
 				position: absolute;
 				width: 17px;
 				height: 30px;
@@ -688,7 +682,7 @@
 				left: 189px;
 				background-color: #1928dc;
 			}
-			.yu_right_shita_rewrite:before {
+			#yu_right_shita_rewrite:before {
 				position: absolute;
 				content: "";
 				width: 17px;
@@ -698,7 +692,7 @@
 				left: 8px;
 				background-color: #ff9ba5;
 			}
-			.uzu1 {
+			#uzu1 {
 				position: absolute;
 				width: 100px;
 				height: 43px;
@@ -708,7 +702,7 @@
 				left: 354px;
 				transform: rotate(39deg);
 			}
-			.uzu2 {
+			#uzu2 {
 				position: absolute;
 				width: 100px;
 				height: 110px;
@@ -717,7 +711,7 @@
 				top: 83px;
 				left: 401px;
 			}
-			.uzu3 {
+			#uzu3 {
 				position: absolute;
 				width: 70px;
 				height: 75px;
@@ -726,7 +720,7 @@
 				left: 415px;
 				background-color: #1928dc;
 			}
-			.uzu_rewrite_1 {
+			#uzu_rewrite_1 {
 				position: absolute;
 				width: 95px;
 				height: 69px;
@@ -736,7 +730,7 @@
 				background-color: #1928dc;
 				transform: rotate(39deg);
 			}
-			.uzu_rewrite_1:before {
+			#uzu_rewrite_1:before {
 				position: absolute;
 				content: "";
 				width: 55px;
@@ -746,7 +740,7 @@
 				background-color: #1928dc;
 				transform: rotate(18deg);
 			}
-			.uzu_rewrite_1:after {
+			#uzu_rewrite_1:after {
 				position: absolute;
 				content: "";
 				width: 45px;
@@ -756,7 +750,7 @@
 				background-color: #1928dc;
 				transform: rotate(21deg);
 			}
-			.uzu4 {
+			#uzu4 {
 				position: absolute;
 				width: 68px;
 				height: 79px;
@@ -765,7 +759,7 @@
 				left: 410px;
 				background-color: #9bcdff;
 			}
-			.uzu_rewrite_2 {
+			#uzu_rewrite_2 {
 				position: absolute;
 				width: 52px;
 				height: 40px;
@@ -775,7 +769,7 @@
 				background-color: #1928dc;
 
 			}
-			.uzu_rewrite_2:before {
+			#uzu_rewrite_2:before {
 				position: absolute;
 				content: "";
 				width: 18px;
@@ -786,7 +780,7 @@
 				background-color: #9bcdff;
 
 			}
-			.uzu_rewrite_2:after {
+			#uzu_rewrite_2:after {
 				position: absolute;
 				content: "";
 				width: 18px;
@@ -797,7 +791,7 @@
 				background-color: #9bcdff;
 
 			}
-			.uzu_rewrite_3 {
+			#uzu_rewrite_3 {
 				position: absolute;
 				width: 40px;
 				height: 10px;
@@ -806,10 +800,8 @@
 				left: 427px;
 				background-color: #9bcdff;
 				transform: rotate(-5deg);
-
-
 			}
-			.uzu_rewrite_3:before {
+			#uzu_rewrite_3:before {
 				position: absolute;
 				content: "";
 				width: 20px;
@@ -822,7 +814,7 @@
 
 
 			}
-			.uzu5 {
+			#uzu5 {
 				position: absolute;
 				width: 38px;
 				height: 43px;
@@ -831,7 +823,7 @@
 				left: 425px;
 				background-color: #1928dc;
 			}
-			.h {
+			#h {
 				position: absolute;
 				width: 3px;
 				height: 10px;
@@ -841,7 +833,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(7deg);
 			}
-			.h:before {
+			#h:before {
 				position: absolute;
 				content: "";
 				width: 3px;
@@ -851,7 +843,7 @@
 				left: 5px;
 				background-color: #FFFFFF;
 			}
-			.h:after {
+			#h:after {
 				position: absolute;
 				content: "";
 				width: 2px;
@@ -862,8 +854,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(90deg);
 			}
-
-			.y {
+			#y {
 				position: absolute;
 				width: 3px;
 				height: 6px;
@@ -873,7 +864,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(-55deg);
 			}
-			.y:before {
+			#y:before {
 				position: absolute;
 				content: "";
 				width: 3px;
@@ -884,7 +875,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(-21deg);
 			}
-			.y:after {
+			#y:after {
 				position: absolute;
 				content: "";
 				width: 3px;
@@ -895,8 +886,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(22deg);
 			}
-
-			.u {
+			#u {
 				position: absolute;
 				width: 3px;
 				height: 9px;
@@ -906,7 +896,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(-42deg);
 			}
-			.u:before {
+			#u:before {
 				position: absolute;
 				content: "";
 				width: 3px;
@@ -916,7 +906,7 @@
 				left: 5px;
 				background-color: #FFFFFF;
 			}
-			.u:after {
+			#u:after {
 				position: absolute;
 				content: "";
 				width: 7px;
@@ -926,7 +916,7 @@
 				left: 0.5px;
 				background-color: #FFFFFF;
 			}
-			.u_rewrite {
+			#u_rewrite {
 				position: absolute;
 				width: 3px;
 				height: 8px;
@@ -936,7 +926,7 @@
 				background-color: #1928dc;
 				transform: rotate(-42deg);
 			}
-			.u_2 {
+			#u_2 {
 				position: absolute;
 				width: 3px;
 				height: 9px;
@@ -946,7 +936,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(-22deg);
 			}
-			.u_2:before {
+			#u_2:before {
 				position: absolute;
 				content: "";
 				width: 3px;
@@ -956,7 +946,7 @@
 				left: 5px;
 				background-color: #FFFFFF;
 			}
-			.u_2:after {
+			#u_2:after {
 				position: absolute;
 				content: "";
 				width: 7px;
@@ -966,7 +956,7 @@
 				left: 0.5px;
 				background-color: #FFFFFF;
 			}
-			.u_2_rewrite {
+			#u_2_rewrite {
 				position: absolute;
 				width: 3px;
 				height: 8px;
@@ -976,7 +966,7 @@
 				background-color: #1928dc;
 				transform: rotate(-22deg);
 			}
-			.y_2 {
+			#y_2 {
 				position: absolute;
 				width: 3px;
 				height: 6px;
@@ -986,7 +976,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(-35deg);
 			}
-			.y_2:before {
+			#y_2:before {
 				position: absolute;
 				content: "";
 				width: 2px;
@@ -997,7 +987,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(-21deg);
 			}
-			.y_2:after {
+			#y_2:after {
 				position: absolute;
 				content: "";
 				width: 3px;
@@ -1008,7 +998,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(22deg);
 			}
-			.s {
+			#s {
 				position: absolute;
 				width: 8px;
 				height: 10px;
@@ -1017,7 +1007,7 @@
 				left: 344px;
 				background-color: #FFFFFF;
 			}
-			.s:before {
+			#s:before {
 				position: absolute;
 				content: "";
 				width: 3px;
@@ -1028,7 +1018,7 @@
 				background-color: #1928dc;
 				transform: rotate(-60deg);
 			}
-			.s:after {
+			#s:after {
 				position: absolute;
 				content: "";
 				width: 2px;
@@ -1039,7 +1029,7 @@
 				background-color: #1928dc;
 				transform: rotate(-60deg);
 			}
-			.s_rewrite {
+			#s_rewrite {
 				position: absolute;
 				width: 2px;
 				height: 3px;
@@ -1048,7 +1038,7 @@
 				left: 350px;
 				background-color: #FFFFFF;
 			}
-			.s_rewrite:before {
+			#s_rewrite:before {
 				position: absolute;
 				content: "";
 				width: 1px;
@@ -1058,7 +1048,7 @@
 				left: -6px;
 				background-color: #FFFFFF;
 			}
-			.s_rewrite:after {
+			#s_rewrite:after {
 				position: absolute;
 				content: "";
 				width: 8px;
@@ -1068,7 +1058,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(30deg);
 			}
-			.i {
+			#i {
 				position: absolute;
 				width: 3px;
 				height: 11px;
@@ -1078,7 +1068,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(19deg);
 			}
-			.i_2 {
+			#i_2 {
 				position: absolute;
 				width: 3px;
 				height: 11px;
@@ -1088,7 +1078,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(35deg);
 			}
-			.k {
+			#k {
 				position: absolute;
 				width: 2px;
 				height: 10px;
@@ -1098,7 +1088,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(35deg);
 			}
-			.k:before {
+			#k:before {
 				position: absolute;
 				content: "";
 				width: 3px;
@@ -1109,7 +1099,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(46deg);
 			}
-			.k:after {
+			#k:after {
 				position: absolute;
 				content: "";
 				width: 3px;
@@ -1120,7 +1110,7 @@
 				background-color: #FFFFFF;
 				transform: rotate(121deg);
 			}
-			.uzu_shita_back {
+			#uzu_shita_back {
 				position: absolute;
 				width: 144px;
 				height: 141px;
@@ -1129,7 +1119,7 @@
 				left: 373px;
 				background-color: #1928dc;
 			}
-			.text {
+			#text {
 				position: absolute;
 				font-size: 12px;
 				top: 345px;
@@ -1145,74 +1135,74 @@
 		</style>
 	</head>
 	<body>
-		<div class="logo">
-			<div class="yu_left_back_1"></div>
-			<div class="yu_left_back_2"></div>
-			<div class="yu_left_circle_back"></div>
-			<div class="yu_right_back_2"></div>
-			<div class="maru_yellow_red_back"></div>
-			<div class="maru_blue_back"></div>
-			<div class="shiki_yoko_back"></div>
-			<div class="shiki_tate_back"></div>
-			<div class="big_half_circle_back"></div>
-			<div class="yu_left_shita_back"></div>
-			<div class="yu_right_shita_back"></div>
-			<div class="yu_left_shita_back_2"></div>
-			<div class="yu_right_shita_back_2"></div>
-			<div class="uzu_back"></div>
-			<div class="uzu_shita_back"></div>
-			<div class="big_half_circle"></div>
-			<div class="big_half_circle_maru"></div>
-			<div class="yu_left_shita"></div>
-			<div class="yu_left_shita_rewrite"></div>
-			<div class="yu_left_circle"></div>
-			<div class="yu_left"></div>
-			<div class="yu_left_rewrite"></div>
-			<div class="yu_right_shita"></div>
-			<div class="yu_right_shita_rewrite"></div>
-			<div class="yu_right_circle"></div>
-			<div class="yu_right"></div>
-			<div class="yu_right_rewrite"></div>
-			<div class="shiki_yoko"></div>
-			<div class="shiki_tate"></div>
-			<div class="uzu1"></div>
-			<div class="uzu2"></div>
-			<div class="uzu3"></div>
-			<div class="uzu_rewrite_1"></div>
-			<div class="uzu4"></div>
-			<div class="uzu_rewrite_2"></div>
-			<div class="uzu5"></div>
-			<div class="uzu_rewrite_3"></div>
-			<div class="maru_blue"></div>
-			<div class="maru_yellow_red"></div>
-			<div class="fukidashi_back"></div>
-			<div class="fukidashi"></div>
-			<div class="fukidashi_circle"></div>
-			<div class="fukidashi_rewrite"></div>
-			<div class="fukidashi_rewrite_2"></div>
-			<div class="y_back"></div>
-			<div class="u_back"></div>
-			<div class="y_back_2"></div>
-			<div class="u_back_2"></div>
-			<div class="s_back"></div>
-			<div class="h_back"></div>
-			<div class="i_back"></div>
-			<div class="k_back"></div>
-			<div class="i_back_2"></div>
-			<div class="y"></div>
-			<div class="u"></div>
-			<div class="u_rewrite"></div>
-			<div class="y_2"></div>
-			<div class="u_2"></div>
-			<div class="u_2_rewrite"></div>
-			<div class="s"></div>
-			<div class="s_rewrite"></div>
-			<div class="h"></div>
-			<div class="i"></div>
-			<div class="k"></div>
-			<div class="i_2"></div>
+		<div id="logo">
+			<div id="yu_left_back_1"></div>
+			<div id="yu_left_back_2"></div>
+			<div id="yu_left_circle_back"></div>
+			<div id="yu_right_back_2"></div>
+			<div id="maru_yellow_red_back"></div>
+			<div id="maru_blue_back"></div>
+			<div id="shiki_yoko_back"></div>
+			<div id="shiki_tate_back"></div>
+			<div id="big_half_circle_back"></div>
+			<div id="yu_left_shita_back"></div>
+			<div id="yu_right_shita_back"></div>
+			<div id="yu_left_shita_back_2"></div>
+			<div id="yu_right_shita_back_2"></div>
+			<div id="uzu_back"></div>
+			<div id="uzu_shita_back"></div>
+			<div id="big_half_circle"></div>
+			<div id="big_half_circle_maru"></div>
+			<div id="yu_left_shita"></div>
+			<div id="yu_left_shita_rewrite"></div>
+			<div id="yu_left_circle"></div>
+			<div id="yu_left"></div>
+			<div id="yu_left_rewrite"></div>
+			<div id="yu_right_shita"></div>
+			<div id="yu_right_shita_rewrite"></div>
+			<div id="yu_right_circle"></div>
+			<div id="yu_right"></div>
+			<div id="yu_right_rewrite"></div>
+			<div id="shiki_yoko"></div>
+			<div id="shiki_tate"></div>
+			<div id="uzu1"></div>
+			<div id="uzu2"></div>
+			<div id="uzu3"></div>
+			<div id="uzu_rewrite_1"></div>
+			<div id="uzu4"></div>
+			<div id="uzu_rewrite_2"></div>
+			<div id="uzu5"></div>
+			<div id="uzu_rewrite_3"></div>
+			<div id="maru_blue"></div>
+			<div id="maru_yellow_red"></div>
+			<div id="fukidashi_back"></div>
+			<div id="fukidashi"></div>
+			<div id="fukidashi_circle"></div>
+			<div id="fukidashi_rewrite"></div>
+			<div id="fukidashi_rewrite_2"></div>
+			<div id="y_back"></div>
+			<div id="u_back"></div>
+			<div id="y_back_2"></div>
+			<div id="u_back_2"></div>
+			<div id="s_back"></div>
+			<div id="h_back"></div>
+			<div id="i_back"></div>
+			<div id="k_back"></div>
+			<div id="i_back_2"></div>
+			<div id="y"></div>
+			<div id="u"></div>
+			<div id="u_rewrite"></div>
+			<div id="y_2"></div>
+			<div id="u_2"></div>
+			<div id="u_2_rewrite"></div>
+			<div id="s"></div>
+			<div id="s_rewrite"></div>
+			<div id="h"></div>
+			<div id="i"></div>
+			<div id="k"></div>
+			<div id="i_2"></div>
 		</div>
-		<div class="text">
+		<div id="text">
 			<p>CSSでゆゆ式ロゴ描いてみた | <a href="http://www.adventar.org/calendars/1045">ゆゆ式 Advent Calendar 2015</a></p>
 			<br />
 			- 確認環境<br />
@@ -1225,7 +1215,6 @@
 			<a href="https://twitter.com/smison">@smison</a>
 			<br />
 			<br />
-
 			<a href="https://twitter.com/share" class="twitter-share-button"{count}>Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 		</div>
